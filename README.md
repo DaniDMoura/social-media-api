@@ -87,21 +87,31 @@ uvicorn app.main:app --reload
 
 ```mermaid
 flowchart TD
-    Client[Cliente/App Mobile] -->|HTTP/JWT| API[FastAPI]
-    API -->|SQLAlchemy ORM| DB[(PostgreSQL)]
-    API -->|Async| Cache[(Redis - Opcional)]
+    Client[Cliente / App Mobile] -->|HTTP/JWT| Nginx[Nginx<br/>Reverse Proxy / Load Balancer]
+
+    Nginx --> API1[FastAPI - Instância 1]
+    Nginx --> API2[FastAPI - Instância 2]
+
+    API1 -->|SQLAlchemy ORM| DB[(PostgreSQL)]
+    API2 -->|SQLAlchemy ORM| DB[(PostgreSQL)]
 
     subgraph "Módulos da API"
-        Users[👥 Users]
-        Posts[📝 Posts]
-        Comments[💬 Comments]
-        Auth[🔐 Auth]
+        Users[Users]
+        Posts[Posts]
+        Comments[Comments]
+        Auth[Auth]
     end
 
-    API --> Users
-    API --> Posts
-    API --> Comments
-    API --> Auth
+    API1 --> Users
+    API1 --> Posts
+    API1 --> Comments
+    API1 --> Auth
+
+    API2 --> Users
+    API2 --> Posts
+    API2 --> Comments
+    API2 --> Auth
+
 ```
 
 - **FastAPI:** Framework moderno e performático
