@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <b>Uma API completa de rede social — conecte pessoas, compartilhe momentos e construa comunidades.</b>
+  <b>API para plataforma de rede social com autenticação JWT, gerenciamento de perfis, posts, comentários, curtidas, seguidores e feed de conteúdo.</b>
 </p>
 
 ---
@@ -339,12 +339,6 @@ Após iniciar a API, acesse:
 ## Licença
 
 Distribuído sob licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## Contribuidores
-
-<a href="https://github.com/seu-usuario">
-  <img src="https://avatars.githubusercontent.com/u/seu-id?v=4" width="50px;" alt="Seu Nome"/>
-</a>
 
 ## Suporte
 
