@@ -1,4 +1,4 @@
-<h1 align="center">📱 Social Media API</h1>
+<h1 align="center">Social Media API</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-green.svg" alt="Python Version">
@@ -13,17 +13,17 @@
 
 ### Funcionalidades principais:
 
-- 🔐 Sistema completo de autenticação JWT
-- 👥 Sistema de seguir/deixar de seguir usuários
-- 📝 CRUD completo de posts com imagens
-- 💬 Sistema de comentários
-- ❤️ Sistema de likes/unlikes
-- 🔍 Feed personalizado de posts
-- 📊 Estatísticas de seguidores e seguindo
+- Sistema completo de autenticação JWT
+- Sistema de seguir/deixar de seguir usuários
+- CRUD completo de posts com imagens
+- Sistema de comentários
+- Sistema de likes/unlikes
+- Feed personalizado de posts
+- Estatísticas de seguidores e seguindo
 
 ---
 
-## 🚀 Instalação & Configuração
+## Instalação & Configuração
 
 ### Pré-requisitos
 
@@ -77,11 +77,11 @@ alembic upgrade head
 uvicorn app.main:app --reload
 ```
 
-> ⚠️ **Dica:** Edite `.env` com suas credenciais do banco de dados e chave secreta JWT.
+> **Dica:** Edite `.env` com suas credenciais do banco de dados e chave secreta JWT.
 
 ---
 
-## 🛠️ Como Funciona
+## Como Funciona
 
 ### Arquitetura
 
@@ -161,7 +161,7 @@ social-media-api/
 
 ---
 
-## 📖 Documentação de Uso
+## Documentação de Uso
 
 ### Autenticação
 
@@ -191,7 +191,7 @@ Authorization: Bearer <seu_token>
 Content-Type: application/json
 
 {
-  "description": "Meu primeiro post! 🎉",
+  "description": "Meu primeiro post!",
   "image_url": "https://exemplo.com/imagem.jpg"
 }
 ```
@@ -257,7 +257,7 @@ docker-compose logs -f api
 
 ---
 
-## 👩‍💻 Desenvolvimento
+## Desenvolvimento
 
 ### Ambiente de Desenvolvimento
 
@@ -308,24 +308,7 @@ follows (id, follower_id, followed_id, created_at)
 ---
 
 <details>
-<summary>❓ FAQ</summary>
-
-**Como resetar minha senha?**
-Atualmente não há endpoint de reset. Você pode atualizar diretamente no banco ou recriar o usuário.
-
-**Posso usar outro banco de dados?**
-Sim, a API suporta qualquer banco compatível com SQLAlchemy (MySQL, SQLite, etc.).
-
-**Como fazer deploy em produção?**
-Recomendamos usar Docker com PostgreSQL, configurar HTTPS e usar um servidor ASGI como Gunicorn + Uvicorn.
-
-**A API suporta upload de imagens?**
-Atualmente aceita apenas URLs de imagens. Upload direto pode ser implementado com AWS S3 ou similar.
-
-</details>
-
-<details>
-<summary>🛠️ Troubleshooting</summary>
+<summary>Troubleshooting</summary>
 
 **Erro de conexão com banco:**
 - Verifique se PostgreSQL está rodando
@@ -345,35 +328,25 @@ Atualmente aceita apenas URLs de imagens. Upload direto pode ser implementado co
 </details>
 
 <details>
-<summary>📝 Changelog</summary>
-
-**v1.0.0** (2024-01-XX)
-- ✨ Sistema completo de usuários, posts e comentários
-- 🔐 Autenticação JWT
-- 👥 Sistema de follow/unfollow
-- ❤️ Sistema de likes
-- 📱 API REST completa
-
-</details>
 
 <details>
-<summary>🚧 Roadmap</summary>
+<summary>Roadmap</summary>
 
-- [ ] 📤 Upload direto de imagens
-- [ ] 🔔 Sistema de notificações
-- [ ] 📧 Reset de senha por email
-- [ ] 🔍 Busca de usuários e posts
-- [ ] 📊 Analytics e métricas
-- [ ] 🌐 Suporte a múltiplos idiomas
-- [ ] 📱 SDK para mobile
-- [ ] ⚡ Cache com Redis
-- [ ] 🚀 Deploy automático (CI/CD)
+- [ ] Upload direto de imagens
+- [ ] Sistema de notificações
+- [ ] Reset de senha por email
+- [ ] Busca de usuários e posts
+- [ ] Analytics e métricas
+- [ ] Suporte a múltiplos idiomas
+- [ ] SDK para mobile
+- [ ] Cache com Redis
+- [ ] Deploy automático (CI/CD)
 
 </details>
 
 ---
 
-## 📊 Documentação Interativa
+## Documentação Interativa
 
 Após iniciar a API, acesse:
 
@@ -383,24 +356,18 @@ Após iniciar a API, acesse:
 
 ---
 
-## 📄 Licença
+## Licença
 
 Distribuído sob licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 👥 Contribuidores
+## Contribuidores
 
 <a href="https://github.com/seu-usuario">
   <img src="https://avatars.githubusercontent.com/u/seu-id?v=4" width="50px;" alt="Seu Nome"/>
 </a>
 
-## 💬 Suporte
+## Suporte
 
-- 🐛 **Bugs:** Abra uma [issue](https://github.com/seu-usuario/social-media-api/issues)
-- 💡 **Ideias:** Use [Discussions](https://github.com/seu-usuario/social-media-api/discussions)
-- 📧 **Contato:** seu-email@exemplo.com
-
----
-
-<p align="center">
-  Feito com ❤️ usando FastAPI
-</p>
+- **Bugs:** Abra uma [issue](https://github.com/seu-usuario/social-media-api/issues)
+- **Ideias:** Use [Discussions](https://github.com/seu-usuario/social-media-api/discussions)
+- **Contato:** mouradanilo061@gmail.com
