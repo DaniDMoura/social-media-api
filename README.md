@@ -306,9 +306,8 @@ follows (id, follower_id, followed_id, created_at)
 
 
 ---
-
-<details>
-<summary>Troubleshooting</summary>
+  
+## Troubleshooting
 
 **Erro de conexão com banco:**
 - Verifique se PostgreSQL está rodando
@@ -324,25 +323,6 @@ follows (id, follower_id, followed_id, created_at)
 - Verifique se JSON está bem formatado
 - Confirme se todos campos obrigatórios estão presentes
 - Consulte docs automáticas em `/docs`
-
-</details>
-
-<details>
-
-<details>
-<summary>Roadmap</summary>
-
-- [ ] Upload direto de imagens
-- [ ] Sistema de notificações
-- [ ] Reset de senha por email
-- [ ] Busca de usuários e posts
-- [ ] Analytics e métricas
-- [ ] Suporte a múltiplos idiomas
-- [ ] SDK para mobile
-- [ ] Cache com Redis
-- [ ] Deploy automático (CI/CD)
-
-</details>
 
 ---
 
